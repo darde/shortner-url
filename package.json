@@ -1,0 +1,19 @@
+{
+  "name": "taller-url-shortner",
+  "version": "1.0.0",
+  "description": "URL Shortener monorepo — backend (Express + Prisma + PostgreSQL) and frontend (React + Tailwind)",
+  "scripts": {
+    "dev:backend": "cd backend && node api/index.js",
+    "dev:frontend": "cd frontend && npm run dev",
+    "db:up": "docker compose up -d",
+    "db:down": "docker compose down",
+    "db:push": "cd backend && npx prisma db push",
+    "db:studio": "cd backend && npx prisma studio",
+    "build": "cd frontend && npm install && npm run build && cd ../backend && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darde/shortner-url.git"
+  },
+  "license": "ISC"
+}

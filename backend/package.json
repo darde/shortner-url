@@ -1,0 +1,22 @@
+{
+  "name": "taller-url-shortner-backend",
+  "version": "1.0.0",
+  "description": "URL Shortener API — Express + Prisma + PostgreSQL",
+  "main": "api/index.js",
+  "scripts": {
+    "dev": "node api/index.js",
+    "db:push": "npx prisma db push",
+    "db:migrate": "npx prisma migrate dev",
+    "db:studio": "npx prisma studio",
+    "postinstall": "npx prisma generate"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "prisma": "^6.5.0"
+  }
+}

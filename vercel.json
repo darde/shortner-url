@@ -2,7 +2,9 @@
   "buildCommand": "cd frontend && npm install && npm run build && cd ../backend && npm install",
   "outputDirectory": "frontend/dist",
   "functions": {
-    "backend/api/index.js": {}
+    "backend/api/index.js": {
+      "includeFiles": "backend/node_modules/.prisma/**"
+    }
   },
   "rewrites": [
     { "source": "/api/:path*", "destination": "/backend/api/index" },
